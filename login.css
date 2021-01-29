@@ -1,0 +1,215 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--light-blue: #7AC5E6;
+	--dark-blue: #0973AE;
+	--dark-text: #000;
+	--light-text: #fff;
+	/*var(--light-text)*/
+}
+
+ html, body {
+	height: 100%;
+}
+
+.header, .main, .footer {
+	width: 60%;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	color: var(--dark-text);
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-ldc{
+	width: 100%;
+	height: 18em;
+}
+
+.main {
+	margin-top: 1em;
+	flex-grow: 1;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+h1, h3, p {
+	text-align: center;
+}
+
+.small {
+	font-size: 0.9em;
+}
+
+.inform {
+	margin-top: 1em;
+}
+
+.inform>li {
+	margin-left: 30%;
+}
+
+.btn {
+	margin: 0 auto;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	font-weight: 800;
+	font-size: 0.9em;
+	text-align: center;
+	color: var(--light-text);
+	background-color: var(--light-blue);
+	width: 40%;
+	border-radius: 20px;
+	padding: 1.2em 0.5em;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background-color: var(--dark-blue);
+}
+
+.footer {
+	flex-shrink: 0;
+	background-color: var(--dark-blue);
+	color: var(--light-text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5em;
+}
+
+.footer-icon {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.icon {
+	display: block;
+	width: 3em;
+	height: 3em;
+	margin: 0 1em 1.5em 1.5em;
+}
+
+@media only screen and (max-width: 1355px) {
+	.icon {
+		margin: 0 1em 1.5em 1em;
+	}
+}
+
+@media only screen and (max-width: 1220px) {
+	.icon {
+		margin: 0 1em 1.5em 0.5em;
+	}
+}
+
+@media only screen and (max-width: 1155px) {
+	.header, .main, .footer {
+		width: 100%;
+	}
+
+	.icon {
+		width: 2.5em;
+		height: 2.5em;
+		margin: 0 1em 1.5em 0.3em;
+	}
+}
+
+@media only screen and (max-width: 1060px) {
+	.btn {
+		margin-top: 4em;
+		margin-bottom: 1em;
+	}
+
+	.icon {
+		width: 2em;
+		height: 2em;
+		margin: 0 1em 1.5em 0.3em;
+	}
+}
+
+@media only screen and (max-width: 595px) {
+	.footer-icon {
+		justify-content: center;
+	}
+
+	.logo-footer {
+		width: 100%;
+		height: 7em;
+	}
+	.icon {
+		width: 2.5em;
+		height: 2.5em;
+		margin: 0 1em 1.5em 0.3em;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.logo-ldc{
+		height: 19em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.logo-ldc{
+		height: 18em;
+	}
+	.inform>li {
+		margin-left: 20%;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+		.inform>li {
+			margin-left: 15%;
+		}
+}
+
+@media only screen and (max-width: 420px) {
+	.logo-ldc{
+		height: 16em;
+	}
+}
+
+@media only screen and (max-width: 395px) {
+	h3 {
+		margin: 0 2em;
+	}
+
+	.inform>li {
+		margin: 0 5% 0 10%;
+	}
+
+	.btn {
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (max-width: 335px) {
+	
+	.logo-ldc{
+		height: 14em;
+	}
+
+	.icon {
+		width: 1.8em;
+		height: 1.8em;
+		margin: 0 1em 1.5em 0.3em;
+	}
+}
